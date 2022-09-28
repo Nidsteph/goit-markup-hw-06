@@ -712,19 +712,19 @@ h1.page-heading {
 
 }
 
-.input {
-    padding: 8px;
-}
 
 .input-text {
-    box-sizing: border-box;
-
     position: absolute;
     width: 448px;
     height: 40px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    padding: 8px;
+    display: flex;
+    left: 725px;
+    margin-top: 45px;
+
 }
 
 .form-checkbox {
@@ -739,7 +739,6 @@ h1.page-heading {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    /* identical to box height, or 171% */
 
     letter-spacing: 0.03em;
 
@@ -750,8 +749,9 @@ h1.page-heading {
     position: absolute;
     width: 200px;
     height: 50px;
-    bottom: 40px;
+    bottom: 70px;
     left: 164px;
+    margin-top: 45px;
 
     background-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -775,15 +775,14 @@ h1.page-heading {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-
 }
+
 
 .send-button:hover,
 .send-button:focus {
     background-color: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
-
 }
 
 
@@ -1357,7 +1356,13 @@ li.info-footer:not(:last-child) {
 }
 
 .subscribe-footer {
+    display: flex;
+
     margin-left: 93px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
 }
 
 .subscribe {
@@ -1369,14 +1374,54 @@ li.info-footer:not(:last-child) {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+
 }
 
 .subscribe-button {
+    position: absolute;
     background-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: none;
     border-radius: 4px;
+    Width: 200px;
+    Height: 50px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding-left: 48px;
+
+    color: #FFFFFF;
+    right: 30px;
+
+
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.icon-send {
+    fill: white;
+}
+
 
 /*ALL IMAGES */
 
