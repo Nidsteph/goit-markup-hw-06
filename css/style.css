@@ -676,7 +676,6 @@ h1.page-heading {
     border-radius: 4px;
 }
 
-/*
 .form-container {
     margin-top: 75px;
     margin-left: 40px;
@@ -685,13 +684,16 @@ h1.page-heading {
     height: 14px;
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
     letter-spacing: 0.01em;
 
     color: #757575;
 }
-*/
+
+.name-label {
+    font-weight: 400;
+    font-size: 12px;
+}
+
 
 .label {
     display: flex;
@@ -714,16 +716,18 @@ h1.page-heading {
 
 
 .input-text {
-    position: absolute;
-    width: 448px;
-    height: 40px;
-
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    padding: 8px;
     display: flex;
     left: 725px;
     margin-top: 45px;
+
+    position: absolute;
+    width: 448px;
+    height: 40px;
+    padding: 8px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #2f303a;
+    border-radius: 4px;
 
 }
 
@@ -731,9 +735,8 @@ h1.page-heading {
     position: absolute;
     width: 400.62px;
     height: 24px;
-    bottom: 120px;
-    left: 52px;
 
+    left: 50px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
