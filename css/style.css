@@ -728,20 +728,21 @@ h1.page-heading {
 
 .input-text {
 
-    margin-top: 45px;
-
-    position: absolute;
-    width: 448px;
-    height: 40px;
+    position: relative;
+    width: 358px;
+    height: 50px;
 
     padding: 15px;
     border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #2F303A;
+
+    border-radius: 4px;
 
 }
 
 .input-form {
     display: inline-block;
-    width: 448px;
+    width: 350px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -750,8 +751,11 @@ h1.page-heading {
 }
 
 .input-form:hover,
-.input-form:focus {
+.input-form:focus,
+.icon-form:hover,
+.icon-form:focus {
     border-color: #2196F3;
+    fill: #2196F3;
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -765,7 +769,6 @@ h1.page-heading {
     top: 28px;
     left: 12px;
 }
-
 
 
 .textarea-comments {
@@ -1425,12 +1428,8 @@ li.info-footer:not(:last-child) {
 }
 
 .subscribe-footer {
-    display: flex;
-
     margin-left: 93px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
+
 
 }
 
@@ -1445,7 +1444,6 @@ li.info-footer:not(:last-child) {
     color: #FFFFFF;
     margin-bottom: 20px;
     margin-top: 10px;
-
 
 }
 
