@@ -1430,7 +1430,6 @@ li.info-footer:not(:last-child) {
 .subscribe-footer {
     margin-left: 93px;
 
-
 }
 
 .subscribe {
@@ -1467,9 +1466,9 @@ li.info-footer:not(:last-child) {
     text-align: center;
     letter-spacing: 0.06em;
     padding-left: 48px;
+    right: 100px;
 
     color: #FFFFFF;
-    right: 30px;
 
 
     transition-property: color, background-color, box-shadow;
