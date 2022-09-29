@@ -520,37 +520,43 @@
       </div> 
       
         <form class="form-container" name="signup-form" autocomplete="on" novalidate>
-        <ul class="list">
+        
+          <ul class="list">
           <li>
           <label class="name-label">
             Name
-            <svg class="icons-form" width="12" height="12"1>
-              <use href="./images/icons.svg#icon-user" ></use>
+            <input class="input-form" type="name" name="name" autofocus />
+            <svg class="icon-form" width="12" height="12">
+              <use href="./images/icons.svg#icon-user"> </use>
             </svg>
-                <input type="name" name="name" autofocus />
           </label>             
           </li>
 
           <li>
           <label class="name-label">
             Telephone
-            <input class="input-text" type="telephone" name="telephone" /> 
+            <input class="input-form" type="telephone" name="telephone" /> 
+            <svg class="icon-form" width="12" height="12">
+              <use href="./images/icons.svg#icon-phone"> </use>
+            </svg>
           </label>            
           </li>
 
           <li>
           <label class="name-label">
             Email
-          </label> 
-          <input class="input-text" type="email" name="email" /> 
+          <input class="input-form" type="email" name="email" /> 
+            <svg class="icon-form" width="12" height="12">
+              <use href="./images/icons.svg#icon-mailbox"> </use>
+            </svg>
+          </label>           
           </li>
           
           <li>
           <label class="name-label">
             Comments
-            <textarea class="input-text"
+            <textarea class="textarea-comments"
               name="comments"
-              rows="5"
               placeholder="Enter the text"> 
             </textarea>
           </label>             
