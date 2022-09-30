@@ -489,13 +489,16 @@
         <!----SUBSCRIBE-->
       <div class="subscribe-footer">
           <p class="subscribe">Subscribe to the newsletter</p>
-          <input class="input-text" type="email" name="email" placeholder="E-mail"/> 
-          <button class="subscribe-button">
-            Suscribe
-            <svg class="icon-send" height="24" weight="24">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
+          <form class="subscribe-form">
+            <input class="input-text" type="email" name="email" placeholder="E-mail"/> 
+            <button class="subscribe-button">
+              Suscribe
+              <svg class="icon-send" height="24" weight="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>            
+          </form>
+
       </div>
 
 
@@ -507,82 +510,53 @@
         
   <div class="modal-backdrop is-hidden" data-modal>
     <div class="modal-container">
-            <button data-modal-close class="modal-close-button">
-              <svg class="closing-icon" height="11" width="11">
-                <use href="./images/icons.svg#icon-close"></use>
-              </svg>
-            </button>
+      <button data-modal-close class="modal-close-button">
+       <svg class="closing-icon" height="11" width="11">
+        <use href="./images/icons.svg#icon-close"></use>
+       </svg>
+      </button>
 <!--------------MODAL WINDOW FORM--------------->
-      <div>
-        <h2 class="form-header">Leave your information and we'll call you back</h2>
-      </div> 
-      
-        <form class="form-container" name="signup-form" autocomplete="on" novalidate>
-        
-          <ul class="list">
-          <li>
-          <label class="name-label">
+    <h2 class="form-header">Leave your information and we'll call you back</h2>
+      <form class="form-container" name="signup-form" autocomplete="on" novalidate>
+        <label class="name-label">
             Name
             <input class="input-form" type="name" name="name" autofocus />
             <svg class="icon-form" width="12" height="12">
               <use href="./images/icons.svg#icon-user"> </use>
             </svg>
-          </label>             
-          </li>
-
-          <li>
-          <label class="name-label">
+          </label>  
+        <label class="name-label">
             Telephone
             <input class="input-form" type="telephone" name="telephone" /> 
             <svg class="icon-form" width="12" height="12">
               <use href="./images/icons.svg#icon-phone"> </use>
             </svg>
-          </label>            
-          </li>
-
-          <li>
-          <label class="name-label">
+        </label>    
+        <label class="name-label">
             Email
           <input class="input-form" type="email" name="email" /> 
             <svg class="icon-form" width="12" height="12">
               <use href="./images/icons.svg#icon-mailbox"> </use>
             </svg>
-          </label>           
-          </li>
-          
-          <li>
-          <label class="name-label">
+        </label>   
+        <label class="name-label">
             Comments
             <textarea class="textarea-comments"
               name="comments"
-              placeholder="Enter the text"> 
+              placeholder="Enter the text" rows="6"> 
             </textarea>
-          </label>             
-          </li>
-        </ul>
-
-        <!-----------it needs to use a checkmark vector----->
-        <div>
-          <label class="form-checkbox">
+        </label>      
+        <label class="form-checkbox">
             <input type="checkbox" />
             <svg class="icon-checkmark" width="12" height="12">
               <use href="./images/icons.svg#icon-checkmark"> </use>
             </svg>
             I agree with the newsletter and accept the Terms and Conditions
-          </label>
-        </div>    
-      </form>  
-
-        <div>
+        </label>  
         <button class="send-button" type="submit">Send</button>
-        </div>
-      
-        </div>             
-        </div>
-        
-
-      
-
+      </form> 
+    </div> 
+  
     <script src="./js/modal.js"></script>
     </body>
   </div>

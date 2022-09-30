@@ -603,6 +603,7 @@ h1.page-heading {
     transform: translate(-50%, -50%);
     width: 528px;
     height: 581px;
+    padding: 40px;
 
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -653,23 +654,12 @@ h1.page-heading {
 /*within the MODAL WINDOW - FORM */
 
 .form-header {
-    position: absolute;
-    width: 448px;
-    height: 23px;
-    margin-top: 40px;
-    margin-left: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.03em;
-
     color: #212121;
 }
 
@@ -686,15 +676,7 @@ h1.page-heading {
 }
 
 .form-container {
-    margin-top: 75px;
-    margin-left: 40px;
-    position: absolute;
-    width: 33px;
-    height: 14px;
-    font-family: 'Roboto';
-    font-style: normal;
     letter-spacing: 0.01em;
-
     color: #757575;
 }
 
@@ -737,12 +719,18 @@ h1.page-heading {
     background-color: #2F303A;
 
     border-radius: 4px;
+    color: white;
 
 }
 
+.input-text:hover,
+.input-text:focus {
+    color: white;
+    transition-property: color;
+}
+
+
 .input-form {
-    display: inline-block;
-    width: 350px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -773,10 +761,7 @@ h1.page-heading {
 
 .textarea-comments {
     padding: 16px;
-    position: absolute;
-
-    width: 448px;
-    height: 120px;
+    resize: none;
     font-family: 'Roboto';
     font-style: normal;
 
@@ -799,15 +784,7 @@ h1.page-heading {
 }
 
 .form-checkbox {
-    position: absolute;
-    width: 400.62px;
-    height: 24px;
 
-    left: 45px;
-    top: 325px;
-
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -818,12 +795,8 @@ h1.page-heading {
 }
 
 .send-button {
-    position: absolute;
     width: 200px;
     height: 50px;
-    bottom: 70px;
-    left: 164px;
-    margin-top: 45px;
 
     background-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1429,7 +1402,12 @@ li.info-footer:not(:last-child) {
 
 .subscribe-footer {
     margin-left: 93px;
+    display: flex;
+    flex-direction: column;
+}
 
+.subscribe-form {
+    display: flex;
 }
 
 .subscribe {
@@ -1447,13 +1425,14 @@ li.info-footer:not(:last-child) {
 }
 
 .subscribe-button {
-    position: absolute;
+
     background-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: none;
     border-radius: 4px;
     Width: 200px;
     Height: 50px;
+    margin-left: 10px;
 
     font-family: 'Roboto';
     font-style: normal;
