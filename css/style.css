@@ -676,6 +676,11 @@ h1.page-heading {
 }
 
 .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     letter-spacing: 0.01em;
     color: #757575;
 }
@@ -683,6 +688,9 @@ h1.page-heading {
 .name-label {
     font-weight: 400;
     font-size: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     position: relative;
 }
 
