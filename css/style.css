@@ -802,7 +802,19 @@ h1.page-heading {
     letter-spacing: 0.03em;
 
     color: #757575;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.icon-checkmark {
+    position: absolute;
+    left: 43px;
+    bottom: 17.5%;
+    fill: white;
+}
+
+.input[type="checkbox"] {
+    border: 1px solid #cccfdb;
+    border-radius: 2px;
 }
 
 
