@@ -687,6 +687,17 @@ h1.page-heading {
     display: flex;
     flex-direction: column;
     position: relative;
+
+    transition-property: fill, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.name-label:hover,
+.name-label:focus {
+    color: #757575;
+    border-color: #188CE8;
+    fill: #188CE8;
 }
 
 .form-label {
@@ -745,28 +756,30 @@ h1.page-heading {
     border-radius: 4px;
     padding: 10px;
     padding-left: 30px;
-}
 
-.input-form:hover,
-.input-form:focus,
-.icon-form:hover,
-.icon-form:focus {
-    outline: none;
-    border-color: #2196F3;
-    fill: #2196F3;
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 
+
+.input-form:hover,
+.input-form:focus {
+    outline: none;
+    border-color: #2196F3;
+    cursor: pointer;
+
+}
+
 .icon-form {
     position: absolute;
-
     top: 50%;
     transform: translateY(-50%);
     left: 12px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -781,17 +794,21 @@ h1.page-heading {
     line-height: 16px;
     letter-spacing: 0.01em;
 
-    color: rgba(117, 117, 117, 0.5);
+    border-color: rgba(117, 117, 117, 0.5);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
+.textarea-comments:hover,
 .textarea-comments:focus {
     border-color: #2196F3;
-    transition-property: border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    outline: none;
+
 }
 
 .form-checkbox {
@@ -803,6 +820,7 @@ h1.page-heading {
 
     color: #757575;
     padding-bottom: 10px;
+
 }
 
 .icon-checkmark {
@@ -810,11 +828,20 @@ h1.page-heading {
     left: 43px;
     bottom: 17.5%;
     fill: white;
+
 }
+
+
+
 
 .input[type="checkbox"] {
     border: 1px solid #cccfdb;
     border-radius: 2px;
+}
+
+input[type=checkbox] {
+    accent-color: #2196F3;
+    fill: #2196F3;
 }
 
 
